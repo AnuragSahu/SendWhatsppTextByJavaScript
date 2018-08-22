@@ -14,16 +14,16 @@ Note Make sure your mobile has Internet Connection
 
 
 <code>
-var count = 100 // Change the Number to change
-var looper = 0
-for(looper=0;looper<count;looper++)
-{
-	window.InputEvent = window.Event || window.InputEvent;
-	var d = new Date();
-	var event = new InputEvent('input', {bubbles: true});
-	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text');	
-	textbox.textContent = "Sample Text";
-	textbox.dispatchEvent(event);
-	document.querySelector("#main > footer > div._3pkkz > div > button > span").click();
-}
+var count = 100 // Change the Number to change <br>
+var looper = 0 <br>
+for(looper=0;looper<count;looper++) <br>
+{ <br>
+	window.InputEvent = window.Event || window.InputEvent; <br>
+	var d = new Date(); <br>
+	var event = new InputEvent('input', {bubbles: true}); <br>
+	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text');	<br>
+	textbox.textContent = "Sample Text"; <br>
+	textbox.dispatchEvent(event); <br>
+	document.querySelector("#main > footer > div._3pkkz > div > button > span").click(); <br>
+} <br>
 				    </code>
