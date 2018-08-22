@@ -14,16 +14,40 @@ Note Make sure your mobile has Internet Connection
 
 
 <code>
-var count = 100 // Change the Number to change <br>
-var looper = 0 <br>
-for(looper=0;looper<count;looper++) <br>
-{ <br>
-	window.InputEvent = window.Event || window.InputEvent; <br>
-	var d = new Date(); <br>
-	var event = new InputEvent('input', {bubbles: true}); <br>
-	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text');	<br>
-	textbox.textContent = "Sample Text"; <br>
-	textbox.dispatchEvent(event); <br>
-	document.querySelector("#main > footer > div._3pkkz > div > button > span").click(); <br>
-} <br>
-				    </code>
+var count = 100 // Change the Number to change 
+</code>
+<code>
+var looper = 0 
+</code>
+<code>
+
+for(looper=0;looper<count;looper++) 
+</code>
+<code>
+{ 
+</code>
+<code>
+	window.InputEvent = window.Event || window.InputEvent; 
+</code>
+<code>
+	var d = new Date(); 
+</code>
+<code>
+	var event = new InputEvent('input', {bubbles: true});
+</code>
+<code>
+	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-
+text.selectable-text');	
+</code>
+<code>
+	textbox.textContent = "Sample Text";
+</code>
+<code>
+	textbox.dispatchEvent(event);
+</code>
+<code>
+	document.querySelector("#main > footer > div._3pkkz > div > button > span").click();
+</code>
+<code>
+} 
+</code>
