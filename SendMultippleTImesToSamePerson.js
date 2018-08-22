@@ -21,7 +21,7 @@ for(looper=0;looper<count;looper++)
 	var event = new InputEvent('input', {bubbles: true});
 	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text');
 	
-	textbox.textContent = "Soory Pooki!! maaf karde";
+	textbox.textContent = "Sample Text!!";
 	textbox.dispatchEvent(event);
 	document.querySelector("#main > footer > div._3pkkz > div > button > span").click();
 }
