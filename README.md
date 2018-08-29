@@ -12,42 +12,19 @@ Steps to Do it:-
 7. Send Enter
 Note Make sure your mobile has Internet Connection
 
-
-<code>
-var count = 100 // Change the Number to change 
-</code>
-<code>
-var looper = 0 
-</code>
-<code>
-
-for(looper=0;looper<count;looper++) 
-</code>
-<code>
-{ 
-</code>
-<code>
-	window.InputEvent = window.Event || window.InputEvent; 
-</code>
-<code>
-	var d = new Date(); 
-</code>
-<code>
+'''
+var message = prompt("Enter the message");
+var count = prompt("Enter the Number of times"); // Change the Number to change 
+var looper = 0;
+for(looper=0;looper<count;looper++)
+{
+	window.InputEvent = window.Event || window.InputEvent;
+	var d = new Date();
 	var event = new InputEvent('input', {bubbles: true});
-</code>
-<code>
-	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-
-text.selectable-text');	
-</code>
-<code>
-	textbox.textContent = "Sample Text";
-</code>
-<code>
+	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text');
+	
+	textbox.textContent = message;
 	textbox.dispatchEvent(event);
-</code>
-<code>
 	document.querySelector("#main > footer > div._3pkkz > div > button > span").click();
-</code>
-<code>
-} 
-</code>
+}
+'''
