@@ -1,4 +1,4 @@
-// This piece of code is written by Anurag Sahu
+// This piece of code is written by Anurag Sahu and edited by Jai Kumar Dewani
 // Code for sending a text to someone on whatsapp via Whatsapp web multiple time
 
 // Steps to do it
@@ -20,10 +20,10 @@ for(looper=0;looper<count;looper++)
 	window.InputEvent = window.Event || window.InputEvent;
 	var d = new Date();
 	var event = new InputEvent('input', {bubbles: true});
-	var textbox= document.querySelector('#main >footer>div._2i7Ej>div._13mgZ>div._3FeAD>div._3u328 ');
+	var textbox= document.querySelector('#main > footer > div._3SvgF._1mHgA.copyable-area > div.DuUXI > div > div._1awRl.copyable-text.selectable-text');
 	
 	textbox.textContent = message;
 	textbox.dispatchEvent(event);
-	var b = document.querySelectorAll('#main >footer>div._2i7Ej>div.hnQHL')[1];
-	b.querySelector('button	').click();
+	var b = document.querySelectorAll('#main > footer > div._3SvgF._1mHgA.copyable-area > div:nth-child(3) > button')[0]
+	b.click();
 }
