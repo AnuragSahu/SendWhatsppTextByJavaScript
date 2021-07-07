@@ -1,4 +1,4 @@
-// This piece of code is written by Anurag Sahu
+// This piece of code is written by Anurag Sahu and edited by Jai Kumar Dewani
 // Code for sending a text to someone on whatsapp via Whatsapp web multiple time
 
 // Steps to do it
@@ -12,16 +12,18 @@
 // Note Make sure your mobile has Internet Connection
 
 
-var count = 100 // Change the Number to change 
-var looper = 0
+var message = prompt("Enter the message");
+var count = prompt("Enter the Number of times"); // Change the Number to change 
+var looper = 0;
 for(looper=0;looper<count;looper++)
 {
-	window.InputEvent = window.Event || window.InputEvent;
-	var d = new Date();
-	var event = new InputEvent('input', {bubbles: true});
-	var textbox= document.querySelector('#main > footer >  div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text');
-	
-	textbox.textContent = "Sample Text!!";
-	textbox.dispatchEvent(event);
-	document.querySelector("#main > footer > div._3pkkz > div > button > span").click();
+    window.InputEvent = window.Event || window.InputEvent;
+    var d = new Date();
+    var event = new InputEvent('input', {bubbles: true});
+    var textbox= document.querySelector('#main > footer > div.vR1LG._3wXwX.copyable-area > div._2A8P4 > div > div._2_1wd.copyable-text.selectable-text');
+    
+    textbox.textContent = message;
+    textbox.dispatchEvent(event);
+    var b = document.querySelectorAll('#main > footer > div.vR1LG._3wXwX.copyable-area > div:nth-child(3) > button')[0]
+    b.click();
 }
